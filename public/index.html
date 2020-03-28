@@ -5,16 +5,17 @@
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <style>
-
       body {
-        color: #333;
+        background-color: #f2f2f2;
       }
+
       progress {
         margin-right: 12px;
         -webkit-flex-grow: 1;
         flex-grow: 1;
         height: 2px;
       }
+
       progress[value] {
         -webkit-appearance: none;
         appearance: none;
@@ -22,50 +23,63 @@
         margin: 40px;
         width: 354px;
       }
+
       progress[value]::-webkit-progress-bar {
         background-color: #eee;
         border-radius: 2px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
       }
+
       progress[value]::-webkit-progress-value {
         background-color: orange;
         transition: opacity 0.15s;
       }
+
       #CommentsFeedModule {
         position: absolute;
-        top: 392px;
-        left: 67px;
+        top: 430px;
+        left: 78px;
       }
+
       #sidebar {
         position: absolute;
-        top: 362px;
-        right: 86px;
+        top: 397px;
+        right: 20px;
       }
 
-      progress {
-        margin-right: 12px;
-        -webkit-flex-grow: 1;
-        flex-grow: 1;
-        height: 2px;
+      #MediaFeed {
+        position: absolute;
+        top: 46px;
+        left: 79px;
       }
 
-      progress[value] {
-        -webkit-appearance: none;
-        appearance: none;
-        flex: 1 1 auto;
-        margin: 40px;
-        width: 354px;
+      .header {
+        width: 100%;
+        font: 100 14px/1.5 Interstate, Lucida Grande, Arial, sans-serif;
+        position: fixed;
+        top: 0;
+        left: 0;
+        -webkit-font-smoothing: subpixel-antialiased;
+        background: #333;
+        height: 46px;
+        transition: height 0.2s ease-in-out;
+        z-index: 1;
       }
 
-      progress[value]::-webkit-progress-bar {
-        background-color: #eee;
-        border-radius: 2px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+      .home {
+        margin-top: -6px;
+        background: #f50;
+        background: linear-gradient(#f70, #f30);
+        float: left;
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 79px;
+        z-index: 1;
       }
 
-      progress[value]::-webkit-progress-value {
-        background-color: orange;
-        transition: opacity 0.15s;
+      #whole {
+        background-color: white;
       }
     </style>
   </head>

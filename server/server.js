@@ -13,5 +13,5 @@ app.use(express.static('__dirname' + '/../public'));
 // app.use('/', express.static(path.join(__dirname, '../client/dist')));
 
 app.listen(port, () => {
-  console.log(`server running at: http://localhost:${port}`);
+  console.log(`server running at:${port}`);
 })
