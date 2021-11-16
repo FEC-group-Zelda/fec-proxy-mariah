@@ -27,7 +27,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "aws-sdk": "^2.646.0",
+    "aws-sdk": "^2.814.0",
     "gulp": "^4.0.2"
   }
 }
